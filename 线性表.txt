@@ -1,0 +1,13 @@
+（1）有一个顺序表L，设计一个算法，找第一个值最小的元素的逻辑序号，并给出算法的时间复杂度和空间复杂度
+答：设顺序表的长度为n，则算法如下：
+int index = 0;
+int min = L.data[0];
+for(int i= 0;i<n;i++)
+{
+if(L.data[i]<min)
+    min = L.data[i];
+	index =i;
+}
+return index;
+时间复杂度为O(n),空间复杂度为O（1）
+
